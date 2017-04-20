@@ -8,7 +8,7 @@ jdk:
 
 addons:
   sonarqube:
-    organization: "LEDS"
+    organization: "leds-github"
     token:
       secure: "a73148b8d8c91914c96acfe7e091f08e4f74b68f"
 
