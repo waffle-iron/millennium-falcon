@@ -23,6 +23,7 @@ install:
 script:
   - cd millennium_falcon
   - python manage.py behave
+  - cd ..
   - sonar-scanner
 
 notifications:
