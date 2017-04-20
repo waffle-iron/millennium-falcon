@@ -10,7 +10,7 @@ addons:
   sonarqube:
     organization: "leds-github"
     token:
-      secure: "a73148b8d8c91914c96acfe7e091f08e4f74b68f"
+      secure: "$SONAR_TOKEN"
 
 branches:
   only:
@@ -27,4 +27,4 @@ script:
   - sonar-scanner
 
 notifications:
-  slack: leds:WcbvqiRBqLkfvG5n8ElKt4Id
+  slack: $SLACK_TOKEN
