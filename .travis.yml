@@ -1,7 +1,8 @@
 language: python
+dist: trusty
+sudo: false
 python:
   - '3.5'
-
 jdk:
 - oraclejdk8
 
@@ -10,7 +11,6 @@ addons:
     organization: "LEDS"
     token:
       secure: "a73148b8d8c91914c96acfe7e091f08e4f74b68f"
-
 
 branches:
   only:
