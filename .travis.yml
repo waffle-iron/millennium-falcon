@@ -2,6 +2,14 @@ language: python
 python:
   - '3.5'
   - '3.3'
+
+addons:
+  sonarqube:
+    organization: "LEDS"
+    token:
+      secure: a73148b8d8c91914c96acfe7e091f08e4f74b68f
+
+
 branches:
   only:
   - master
@@ -13,6 +21,7 @@ install:
 script:
   - cd millennium_falcon
   - python manage.py behave
+  - sonar-scanner
 
 notifications:
   slack: leds:WcbvqiRBqLkfvG5n8ElKt4Id
