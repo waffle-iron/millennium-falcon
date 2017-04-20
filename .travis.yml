@@ -13,3 +13,6 @@ install:
 script:
   - cd millennium_falcon
   - python manage.py behave
+
+  notifications:
+    slack: leds:WcbvqiRBqLkfvG5n8ElKt4Id
