@@ -8,11 +8,11 @@ branches:
   - desenvolvimento
 
 install:
-- pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 script:
   - cd millennium_falcon
   - python manage.py behave
 
-  notifications:
-    slack: leds:WcbvqiRBqLkfvG5n8ElKt4Id
+notifications:
+  slack: leds:WcbvqiRBqLkfvG5n8ElKt4Id
